@@ -1,0 +1,131 @@
+@media(min-width: 1000px) {
+    .lpvideo .lpons-videoControls button{
+        font-size: 180%;
+    }
+    .lpvideo .lpons-videoControls {
+        height: 50px;
+    }
+    .lpvideo  .lpons-controls-time{
+        font-size: 18px;
+    }
+}
+@media(width: 750px) {
+    .lpvideo .lpons-videoControls button{
+        font-size: 150%;
+    }
+    .lpvideo .lpons-videoControls {
+        height: 40px;
+    }
+    .lpvideo  .lpons-controls-time{
+        font-size: 15px;
+    }
+}
+@media(max-width: 500px) {
+    .lpvideo .lpons-videoControls button{
+        font-size: 100%;
+    }
+    .lpvideo .lpons-videoControls {
+        height: 30px;
+    }
+    .lpvideo  .lpons-controls-time{
+        font-size: 12px;
+    }
+}
+
+.lpvideo{
+    position: relative;
+    max-width: 1000px;
+}
+.lpvideo .glyphicon{
+    color: white;
+
+}
+
+.lpons-progress{
+    margin: 0;
+    height: 10px !important;
+}
+
+.lpons-progressbar{
+    background-image: -webkit-linear-gradient(top, #b70c00 0, #ff0000 100%);
+    background-image: -o-linear-gradient(top, #b70c00 0, #ff0000 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#b70c00),to(#ff0000));
+    background-image: linear-gradient(to bottom, #b70c00 0, #ff0000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff286090', GradientType=0);
+    background-repeat: repeat-x;
+}
+
+.lpons-content-videoControls{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.lpvideo .lpons-videoControls{
+    padding: 0.8% 0.4% 0.8% 0.4%;
+    width: 100%;
+
+    background: rgba(0,0,0,0.6);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.6)), color-stop(40%, rgba(0,0,0,0)), color-stop(51%, rgba(0,0,0,0)), color-stop(60%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.6)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 51%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+
+.lpvideo:hover .lpons-content-videoControls {
+    opacity: .9;
+}
+
+.lpvideo .lpons-videoControls-right button{
+    float: right;
+    display: block;
+}
+
+.lpvideo .lpons-videoControls-left button{
+    float: left;
+    display: block;
+}
+
+.lpvideo  .lpons-controls-time{
+    float: left;
+    display: block;
+    font-weight: bold;
+    color: white;
+    margin-left: 1%;
+    height: 100%;
+
+}
+
+.lpvideo  .lpons-controls-time .lpons-contentTime{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.lpvideo video{
+    width: 100%;
+}
+
+
+
+.lpvideo .lpons-videoControls button, .lpvideo .lpons-videoControls .lpons-controls-time{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 5%;
+    display: inline-block;
+}
